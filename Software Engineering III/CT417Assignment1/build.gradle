@@ -5,23 +5,19 @@ plugins {
 group 'org.example'
 version '1.0-SNAPSHOT'
 
-allprojects
-        {
-            repositories
-                    {
-                        mavenCentral()
-                        maven { url 'https://jitpack.io' }
-                    }
-        }
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
 
-
-
-
+}
 
 dependencies {
+    implementation group: 'org.terasoluna.gfw', name: 'terasoluna-gfw-jodatime', version: '5.6.0.RELEASE'
+    implementation 'com.github.databunks:CT417Assignment1:935112400a'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-    implementation 'com.github.databunks:4th-Year-Code-:-SNAPSHOT'
+    // https://mvnrepository.com/artifact/org.terasoluna.gfw/terasoluna-gfw-jodatime
+
 }
 
 test {
